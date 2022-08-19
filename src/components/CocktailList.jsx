@@ -5,6 +5,10 @@ import { useGlobalContext } from '../context';
 
 const CocktailList = () => {
   const { cocktails, loading } = useGlobalContext();
+  console.log(
+    '🚀 ~ file: CocktailList.jsx ~ line 8 ~ CocktailList ~ cocktails',
+    cocktails
+  );
 
   if (loading) {
     return <Loading />;
