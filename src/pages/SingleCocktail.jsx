@@ -1,7 +1,7 @@
 import React from 'react';
 
-const SingleCoctail = () => {
+const SingleCocktail = () => {
   return <div>SingleCoctail</div>;
 };
 
-export default SingleCoctail;
+export default SingleCocktail;
