@@ -1,10 +1,18 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 
 const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
-  return <AppContext.Provider value='hello'>{children}</AppContext.Provider>;
+  const [loading, setLoading] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('a');
+  const [cocktails, setCocktails] = useState([]);
+
+  return (
+    <AppContext.Provider value={{ loading, cocktails, setSearchTerm }}>
+      {children}
+    </AppContext.Provider>
+  );
 };
 
 export const useGlobalContext = () => {
