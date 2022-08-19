@@ -3,13 +3,8 @@ import Cocktail from './Cocktail';
 import Loading from './Loading';
 import { useGlobalContext } from '../context';
 
-const CocktailList = () => {
+export default function CocktailList() {
   const { cocktails, loading } = useGlobalContext();
-  console.log(
-    '🚀 ~ file: CocktailList.jsx ~ line 8 ~ CocktailList ~ cocktails',
-    cocktails
-  );
-
   if (loading) {
     return <Loading />;
   }
@@ -20,7 +15,14 @@ const CocktailList = () => {
       </h2>
     );
   }
-  return <div>CocktailList</div>;
-};
-
-export default CocktailList;
+  return (
+    <section className='section'>
+      <h2 className='section-title'>cocktails</h2>
+      <div className='cocktails-center'>
+        {cocktails.map((item) => {
+          return <Cocktail key={item.id} {...item} />;
+        })}
+      </div>
+    </section>
+  );
+}
