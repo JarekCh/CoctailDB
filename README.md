@@ -13,4 +13,4 @@ Application that allow user to serach for favorite drink. User instruction and i
 
 ### Live
 
-https://jc-coctaildb.netlify.app/
+https://jc-cocktaildb.netlify.app/
