@@ -10,3 +10,7 @@ Application that allow user to serach for favorite drink. User instruction and i
 - JS
 - HTML
 - CSS
+
+### Live
+
+https://jc-coctaildb.netlify.app/
