@@ -1,6 +1,6 @@
 # TheCocktailDB
 
-Application that allow user to serach for favorite drink. User instruction and ingredients for single drink. Project using TheCocktailDB API, context for state managing and react router for site navigation.
+Application that allows user to search for favorite drink. User can get instructions and ingredients for picked drink. Project is using TheCocktailDB API, context for state managing and react router for site navigation.
 
 ## Technologies
 
